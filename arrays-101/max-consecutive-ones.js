@@ -1,6 +1,6 @@
 // https://leetcode.com/explore/featured/card/fun-with-arrays/521/introduction/3238/
 
-const findMaxConsecutiveOnes = (nums) => {
+function findMaxConsecutiveOnes(nums) {
   // place to store the count of consecutive ones
   let count = 0;
   // place to store current max
@@ -27,9 +27,9 @@ const findMaxConsecutiveOnes = (nums) => {
   }
   // return max
   return max;
-};
+}
 
-const findMaxConsecutiveOnes = (nums) => {
+function findMaxConsecutiveOnes(nums) {
   let count = 0;
   let max = 0;
 
@@ -45,7 +45,7 @@ const findMaxConsecutiveOnes = (nums) => {
     }
   }
   return max;
-};
+}
 
 console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]), 3);
 console.log(findMaxConsecutiveOnes([1, 1, 1, 1, 1]), 5);
