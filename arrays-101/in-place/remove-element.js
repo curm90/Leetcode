@@ -8,7 +8,7 @@ function removeElement(nums, val) {
     // if arr[i] !== arr[result]
     if (nums[i] != val) {
       // set num at result index to num and arr[i]
-      nums[i] = nums[result];
+      nums[result] = nums[i];
       // increment result
       result++;
     }
