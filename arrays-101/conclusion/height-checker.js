@@ -4,7 +4,7 @@ function heightChecker(heights) {
   // place to store the result (number of moves)
   let moves = 0;
   // place to store a sorted array
-  const sorted = [...heights].sort((a, b) => a - b);
+  const sorted = [...heights].sort();
   // iterate over the heights
   for (let i = 0; i < heights.length; i++) {
     // if element at index in heights is not equal to element at index in sorted
@@ -19,7 +19,7 @@ function heightChecker(heights) {
 
 function heightChecker(heights) {
   let moves = 0;
-  const sorted = [...heights].sort((a, b) => a - b);
+  const sorted = [...heights].sort();
 
   heights.map((num, i) => {
     if (num != sorted[i]) {
@@ -31,7 +31,7 @@ function heightChecker(heights) {
 }
 
 function heightChecker(heights) {
-  const sorted = [...heights].sort((a, b) => a - b);
+  const sorted = [...heights].sort();
 
   return heights.reduce((total, _, i) => {
     if (sorted[i] != heights[i]) {
@@ -42,7 +42,7 @@ function heightChecker(heights) {
 }
 
 function heightChecker(heights) {
-  const sorted = [...heights].sort((a, b) => a - b);
+  const sorted = [...heights].sort();
 
   return heights.reduce(
     (total, _, i) => (heights[i] != sorted[i] ? total + 1 : total),
