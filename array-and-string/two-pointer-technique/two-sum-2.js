@@ -22,6 +22,22 @@ function twoSum(numbers, target) {
   }
 }
 
+// Lookup table
+function twoSum(numbers, target) {
+  const lookup = {};
+
+  for (let i = 0; i < numbers.length; i++) {
+    const num = numbers[i];
+    const diff = target - num;
+
+    if (lookup[diff] !== undefined) {
+      return [lookup[diff] + 1, i + 1];
+    }
+
+    lookup[num] = i;
+  }
+}
+
 console.log(twoSum([2, 7, 11, 15], 9), [1, 2]); // [1, 2]
 console.log(twoSum([2, 3, 4], 6), [1, 3]); // [1, 3]
 console.log(twoSum([-1, 0], -1), [1, 2]);
