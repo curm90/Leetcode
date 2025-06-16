@@ -1,5 +1,6 @@
 // https://leetcode.com/explore/learn/card/fun-with-arrays/523/conclusion/3270/
 
+// Too slow
 function findDisappearedNumbers(nums) {
   const result = [];
 
@@ -12,6 +13,7 @@ function findDisappearedNumbers(nums) {
   return result;
 }
 
+// Works but not optimal
 function findDisappearedNumbers(nums) {
   const flags = new Array(nums.length);
   const result = [];
